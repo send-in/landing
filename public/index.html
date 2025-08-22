@@ -1,43 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1" />
+    <meta name="theme-color" content="#F4F9FF" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="sendIn"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="p:domain_verify" content="cf4ebd91b2f922aa9cabd517d03a25f7" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="canonical" href="https://vishnushon.com" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <link rel="preconnect" href="https://region1.google-analytics.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap"
+    />
+
+    <title>SendIn</title>
   </head>
+
+
+  <!-- <link
+    rel="preload"
+    href="./main.min.css"
+    as="style"
+    onload="this.rel='stylesheet'"
+  /> -->
+  <!-- <noscript><link rel="stylesheet" href="./main.min.css" /></noscript> -->
+<!-- 
+  <link
+    rel="preload"
+    href="./build.css"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+  <noscript><link rel="stylesheet" href="./build.css" /></noscript> -->
+
+  <script>
+    !(function (a) {
+      "use strict";
+      var b = function (b, c, d) {
+        function j(a) {
+          if (e.body) return a();
+          setTimeout(function () {
+            j(a);
+          });
+        }
+        function l() {
+          f.addEventListener && f.removeEventListener("load", l),
+            (f.media = d || "all");
+        }
+        var g,
+          e = a.document,
+          f = e.createElement("link");
+        if (c) g = c;
+        else {
+          var h = (e.body || e.getElementsByTagName("head")[0]).childNodes;
+          g = h[h.length - 1];
+        }
+        var i = e.styleSheets;
+        (f.rel = "stylesheet"),
+          (f.href = b),
+          (f.media = "only x"),
+          j(function () {
+            g.parentNode.insertBefore(f, c ? g : g.nextSibling);
+          });
+        var k = function (a) {
+          for (var b = f.href, c = i.length; c--; )
+            if (i[c].href === b) return a();
+          setTimeout(function () {
+            k(a);
+          });
+        };
+        return (
+          f.addEventListener && f.addEventListener("load", l),
+          (f.onloadcssdefined = k),
+          k(l),
+          f
+        );
+      };
+      "undefined" != typeof exports ? (exports.loadCSS = b) : (a.loadCSS = b);
+    })("undefined" != typeof global ? global : this);
+    !(function (a) {
+      if (a.loadCSS) {
+        var b = (loadCSS.relpreload = {});
+        if (
+          ((b.support = function () {
+            try {
+              return a.document
+                .createElement("link")
+                .relList.supports("preload");
+            } catch (a) {
+              return !1;
+            }
+          }),
+          (b.poly = function () {
+            for (
+              var b = a.document.getElementsByTagName("link"), c = 0;
+              c < b.length;
+              c++
+            ) {
+              var d = b[c];
+              "preload" === d.rel &&
+                "style" === d.getAttribute("as") &&
+                (a.loadCSS(d.href, d, d.getAttribute("media")), (d.rel = null));
+            }
+          }),
+          !b.support())
+        ) {
+          b.poly();
+          var c = a.setInterval(b.poly, 300);
+          a.addEventListener &&
+            a.addEventListener("load", function () {
+              b.poly(), a.clearInterval(c);
+            }),
+            a.attachEvent &&
+              a.attachEvent("onload", function () {
+                a.clearInterval(c);
+              });
+        }
+      }
+    })(this);
+  </script>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

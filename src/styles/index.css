@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap);
+
+body,
+main {
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-align: center;
+}
+
+.pop-in {
+	animation: 3s fadeIn;
+}
+
+.clip-circle {
+	animation: 2s polygon;
+}
+
+@keyframes polygon {
+	100% {
+		clip-path: polygon(
+			0 0,
+			50% 0,
+			100% 0,
+			100% 50%,
+			100% 100%,
+			50% 100%,
+			0 100%,
+			0 50%
+		);
+	}
+	0% {
+		clip-path: polygon(
+			50% 50%,
+			50% 25%,
+			50% 50%,
+			75% 50%,
+			50% 50%,
+			50% 75%,
+			50% 50%,
+			25% 50%
+		);
+	}
+}
+
+.stickyScroll {
+	overflow-anchor: none;
+}
+
+body {
+	width: 100vw;
+	overflow-x: clip;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-snap-type: y mandatory;
+	user-select: none;
+}
+main {
+	scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.title-gradient {
+	background: #9325D2;
+	background: linear-gradient(90deg,rgba(147, 37, 210, 1) 0%, rgba(196, 140, 255, 1) 80%, rgba(65, 66, 149, 1) 100%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-500px * 10))}
+}
