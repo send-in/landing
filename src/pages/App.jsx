@@ -15,7 +15,7 @@ const App = () => {
 	return (
 		<main 
 			className="
-				p-6 w-screen h-screen
+				p-2 w-screen h-screen
 			"
 		>
 

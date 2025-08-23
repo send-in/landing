@@ -31,14 +31,15 @@ const faqData = [
 ]
 
 const FAQ = () => {
-	const [openIndex, setOpenIndex] = useState(null)
+	const [openIndex, setOpenIndex] = useState(0)
 
-	const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index)
+	const toggleFAQ = (index) => 
+		setOpenIndex(openIndex === index ? 0 : index)
 
 	return (
 		<section 
 			className="
-				font-mada py-10 px-4 text-charcoal-200 z-20
+				font-mada py-10 px-4 mb-10 z-20
 				flex flex-col items-center gap-10 w-full
 			"
 		>
@@ -52,25 +53,40 @@ const FAQ = () => {
 			</h3>
 
 			<div 
-				className="flex flex-col items-center gap-5 w-[50%] h-[35vh] "
+				className="flex flex-col items-center gap-5 w-[50%] h-[35vh] tracking-tight text-charcoal-100"
 			>
 				{faqData.map((
 					faq, 
 					index
 				) => (
 					<div
-						className="bg-white rounded-lg shadow-sm p-4 cursor-pointer transition-transform ease-in-out delay-100 w-full"
-						key={index}
+						className="bg-white rounded-xl border border-grey-100 p-4 cursor-pointer transition-transform ease-in-out delay-100 w-full"
 						onClick={() => toggleFAQ(index)}
+						key={index}
 					>
-						<h3 className="text-xl font-normal">{faq.question}</h3>
+						<div className="flex justify-between items-center">
+							<h3 
+								className="text-xl font-normal"
+							>
+								{faq.question}
+							</h3>
+							<img
+								src="/arrow.svg"
+								alt="toggle arrow"
+								className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
+									openIndex === index ? "rotate-180" : "rotate-0"
+								}`}
+							/>
+						</div>
 
 						<div
 							className={`overflow-hidden transition-all duration-500 ease-in-out ${
-								openIndex === index ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
+								openIndex === index ? "max-h-40 opacity-100 mt-10" : "max-h-0 opacity-0"
 							}`}
 						>
-							<p className="text-lg text-charcoal-100">
+							<p 
+								className="text-md text-charcoal-100"
+							>
 								{faq.answer}
 							</p>
 						</div>

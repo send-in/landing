@@ -112,7 +112,7 @@ const links = [
 const Footer = () => {
 	return (
 		<section
-			className="w-full mt-8 mb-5 text-white"
+			className="w-full mt-4 mb-3 text-white"
 		>
 			<div
 				className="

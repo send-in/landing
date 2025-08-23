@@ -26,8 +26,8 @@ const ClientList = () => {
 	return (
 		<aside 
 			className="
-				z-10 text-white text-xl w-[50%] gap-5 font-medium
-				flex flex-col items-center overflow-clip
+				z-10 text-white text-md w-[50%] gap-2 font-medium
+				flex flex-col items-center overflow-clip my-10 mt-20
 			"
 		>
 			<p>20+ Global teams saving hundreds of hours !</p>

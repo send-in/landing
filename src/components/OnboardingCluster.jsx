@@ -39,7 +39,7 @@ const OnboardingCluster = ({
 							px-5 py-1 rounded-full w-[35%] 
 							text-white hover:bg-blue-200 bg-blue-100
 							transition-all ease-in-out delay-100 
-							cursor-pointer
+							cursor-pointer whitespace-nowrap
 						"
 					>
 						Get started

@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<nav 
 			className="
-				p-5 py-3 min-w-[40%] text-lg mb-12
+				p-2 pl-4 min-w-[60%] text-sm mb-4
 				flex items-center gap-10 justify-between
 				bg-white rounded-full font-medium text-charcoal-100
 			"
@@ -55,7 +55,7 @@ const Navbar = () => {
 			<a
 				href="/"
 				className="
-					px-10 py-1 rounded-full
+					px-10 py-2 rounded-full
 					text-white hover:bg-blue-200 bg-blue-100
 					transition-all ease-in-out delay-100 
 					cursor-pointer
