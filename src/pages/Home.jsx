@@ -3,6 +3,8 @@ import Hero from "../layouts/Hero"
 import Navbar from "../components/Navbar"
 import Features from "../layouts/Features"
 import FAQ from "../layouts/FAQ"
+import Pricing from "../layouts/Pricing"
+import Footer from "../components/Footer"
 // #endregion
 
 const Home = () => {
@@ -19,16 +21,16 @@ const Home = () => {
 	>
 		<section 
 			className="
-				rounded-3xl w-full h-fit
-				flex flex-col items-center p-10
+				rounded-t-3xl w-full h-fit
+				flex flex-col items-center px-10 pt-10
 				bg-bluewash text-charcoal-100
 			"
 		>
 			<Navbar />
 			<Hero />
-			<Features/>
 		</section>
 
+		<Features/>
 
 		<section 
 			className="
@@ -38,7 +40,10 @@ const Home = () => {
 			"
 		>
 			<FAQ/>
+			<Pricing/>
 		</section>
+
+		<Footer/>
 	</main>
   )
 }

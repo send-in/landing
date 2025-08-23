@@ -11,24 +11,28 @@ const Features = () => {
 			className="
 				flex flex-col items-center z-10
 				text-center p-8 gap-24 relative
-				bg-white w-screen min-h-screen
+				bg-white w-screen
 			"
 		>
 			<div
 				className="
-					 w-full h-[80%] flex flex-col 
-					 justify-center items-center
-					bg-bluewash rounded-3xl 
+					 w-full h-full flex flex-col 
+					 justify-center items-center gap-20
+					bg-bluewash rounded-3xl p-20
 					bg-gradient bg-cover bg-center
 				"
 			>
 
-				<h2>Bulk Schedule DMs</h2>
+				<h2
+					className="text-5xl font-normal tracking-tighter"
+				>
+					Bulk Schedule DMs
+				</h2>
 
 				<div
 					className="
 						grid grid-cols-4 grid-rows-3 gap-6
-						h-[60%] w-[80%]
+						h-[70%] w-[60%] 
 					"
 				>
 					<FeatureCard 
@@ -36,7 +40,7 @@ const Features = () => {
 						title="Bulk Scheduling" 
 						element={
 							<img
-								className=""
+								className="h-[80%]"
 								src="/schedule.png"
 								alt="schedule"
 							/>
@@ -47,7 +51,7 @@ const Features = () => {
 						title="Time Zone Intelligence"
 						element={
 							<img
-								className=""
+								className="h-[80%]"
 								src="/timezone.png"
 								alt="schedule"
 							/>

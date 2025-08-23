@@ -18,8 +18,8 @@ const FeatureCard = ({
 		<aside
 			className={`
 				bg-white bg-opacity-50 w-full h-full
-				rounded-2xl p-5 text-3xl font-normal
-				flex flex-col justify-center items-center
+				rounded-2xl p-5 pt-10 text-2xl font-normal
+				flex flex-col justify-start items-center
 				gap-10 ${gridVariation[index]}
 			`}
 		>
