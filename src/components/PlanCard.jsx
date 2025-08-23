@@ -1,3 +1,7 @@
+// #region Imports
+import { useState } from "react"
+// #endregion
+
 const PlanCard = ({
 	title,
 	description,
@@ -9,61 +13,84 @@ const PlanCard = ({
 	buttonColor = "bg-charcoal-200",
 	textColor = "text-charcoal-100",
 	slider = false,
-	action = () => {}
+	action = () => {},
+    billing = "MONTHLY",
 }) => {
+	const [sliderValue, setSliderValue] = useState(messages)
+	const pricePerMessage = price / messages
+	const calculatedPrice = (sliderValue * pricePerMessage).toFixed(0)
+
 	return (
 		<div
 			className={`
-				bg-white rounded-3xl shadow p-8 flex flex-col items-center text-center transition
-				${highlighted ? "border-8 border-purple-200" : ""}
+				bg-white rounded-3xl py-8 p-4 flex flex-col items-center text-center transition
+				${highlighted ? "border-4 border-purple-200" : "border border-grey-100"}
 				font-normal tracking-tighter h-fit
 			`}
 		>
 
 		<h3 
 			className={`
-				text-3xl font-medium text-charcoal-100
-				${textColor}
+				text-2xl font-medium ${textColor}
 			`}>
 			{title}
 		</h3>
 
 		<p 
-			className="text-grey-300 mt-3 text-lg">
+			className="text-grey-200 mt-3 text-sm tracking-tight ">
 			{description}
 		</p>
 
-		<div className="w-full border-t border-grey-100 my-6" />
+		<div className="w-full border-t border-grey-100 my-4" />
 
 			{
 				price &&
-				<p
-					className={`text-6xl font-semibold  w-[40%] my-5 ${
+				<div
+					className={`text-5xl font-semibold  w-[30%] my-2 flex flex-col items-center ${
 						textColor
 					}`}
 				>
-					{price}{" "}
-					<span className="text-3xl font-normal"> 
+					<p>
+						${ 
+							billing === "MONTHLY" ? 
+							calculatedPrice : ((calculatedPrice * 12)/1.5) 
+						}{" "}
+					</p>
+					
+					<span className="text-xl font-normal"> 
 						/month
 					</span>
-				</p>
+				</div>
 			}
 
 			{
 				messages && 
 				<p 
-					className="text-lg text-grey-200"
+					className="text-md text-grey-200"
 				>
 					<span className="text-charcoal-100">
-						{messages}{" "}
+						{sliderValue}{" "}
 					</span >
 					scheduled messages / month
 				</p>
 			}
 
+			{
+				slider && (
+				<input
+					type="range"
+					min={100}
+					max={2000}
+					step={100}
+					value={sliderValue}
+					onChange={(e) => setSliderValue(Number(e.target.value))}
+					className="w-[90%] my-4 accent-blue-100 cursor-pointer "
+				/>
+			)}
+
 			<button
 				className={`
-					mt-2 mb-5 w-[90%] ${buttonColor} text-white py-1 
+					my-2 w-[90%] ${buttonColor} text-white py-1 
 					rounded-full font-medium text-lg hover:brightness-90 
 					transition-all ease-in-out delay-100 
 					cursor-pointer
@@ -75,13 +102,13 @@ const PlanCard = ({
 
 			<div className="w-full border-t border-grey-100 my-6" />
 
-			<ul className="space-y-3 text-grey-300 text-left w-full text-lg">
+			<ul className="space-y-3 text-grey-200 text-left w-full text-md">
 				{features.map((f, i) => (
 					<li key={i}>
 						<img 
+							className="inline-block mr-2" 
 							src="check.svg" 
 							alt="Check icon" 
-							className="inline-block mr-2" 
 						/>
 						{f}
 					</li>

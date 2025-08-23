@@ -82,3 +82,14 @@ input:-webkit-autofill {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-500px * 10))}
 }
+
+.bgGradient {
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: 
+    radial-gradient(49% 81% at 45% 47%, #9C9AD7 0%, #073AFF00 76%),
+    radial-gradient(113% 91% at 17% -2%, #E9ECF6 20%, #FF000000 100%), /* more white */
+    radial-gradient(142% 91% at 83% 7%, #E9ECF6 25%, #FF000000 96%), /* stronger white */
+    radial-gradient(142% 91% at -6% 74%, #AD35D6FF 29%, #FF000000 68%, #9738C0 98%),
+    radial-gradient(142% 91% at 111% 84%, #306094FF 0%, #574CA8 99%);
+}

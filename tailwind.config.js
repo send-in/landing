@@ -37,7 +37,7 @@ module.exports = {
 			visibility: ["group-hover"],
 			backgroundImage: {
 				"gradient": "linear-gradient(to bottom, #F5F9FF, rgba(245,249,255,0)), url('/public/grainy.svg')",
-				"grainy": "url('/public/grainy.svg')",
+                "noise": "url('/public/noise.svg')",
 			},
 		},
 	},

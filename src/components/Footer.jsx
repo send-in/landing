@@ -18,7 +18,7 @@ const links = [
 				href: "/"
 			},
 			{
-				name: "Timezone based scheduling",
+				name: "Timezone intelligence",
 				href: "/"
 			},
 		],
@@ -112,36 +112,35 @@ const links = [
 const Footer = () => {
 	return (
 		<section
-			className="w-full my-8 text-white"
+			className="w-full mt-8 mb-5 text-white"
 		>
 			<div
 				className="
-					flex flex-col items-center bg-grainy bg-cover w-full
-					rounded-3xl p-10 gap-20
+					flex flex-col items-center bgGradient bg-cover w-full
+					rounded-3xl p-10 gap-20 relative overflow-hidden z-10
 				"
 			>
+
 				<Logo
 					size={110}
 				/>
 
 				<OnboardingCluster/>
 
-
 				<aside 
 					className="
 						large:flex small:px-10  justify-between 
-						px-10 w-[50%] text-right py-20 small:py-0 
-						small:grid small:grid-cols-2 small:gap-4
-						font-normal 
+						px-10 w-[70%] text-right pb-20
+						font-normal
 					"
 				>
 					{links.map((category, index) => (
 						<div 
 							key={index} 
-							className="small:w-[70%] text-lg flex flex-col items-start"
+							className="text-md flex flex-col items-start"
 						>
 							<p 
-								className="text-3xl"
+								className="text-2xl"
 							>
 								{category.title}
 							</p>
@@ -149,7 +148,7 @@ const Footer = () => {
 							{category.items.map((link, idx) => (
 								<a
 									className="
-										opacity-70 hover:opacity-100
+                                        brightness-90 hover:brightness-200
 										transition-all ease-in-out delay-100 
 										cursor-pointer
 									"
@@ -167,6 +166,14 @@ const Footer = () => {
 
 
 				<p>2025 © SendIn.  support@sendin.com</p>
+
+               <div
+                    className="
+                        bg-noise absolute inset-0 w-full h-full -z-10 opacity-25 
+                        [mask-image:linear-gradient(to_bottom,transparent,black)] 
+                        [mask-repeat:no-repeat] [mask-size:100%_100%]
+                    "
+                />
 			</div>
 
 			
