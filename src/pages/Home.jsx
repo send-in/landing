@@ -35,8 +35,8 @@ const Home = () => {
 		<section 
 			className="
 				rounded-3xl w-full
-				flex flex-col items-center p-10
-				bg-bluewash text-charcoal-100
+				flex flex-col items-center  justify-center
+                p-10 bg-bluewash text-charcoal-100
 			"
 		>
 			<FAQ/>

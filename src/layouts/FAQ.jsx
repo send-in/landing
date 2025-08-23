@@ -52,10 +52,7 @@ const FAQ = () => {
 			</h3>
 
 			<div 
-				className="
-					flex flex-col items-center gap-5 w-[50%]
-					h-screen
-				"
+				className="flex flex-col items-center gap-5 w-[50%] h-[35vh] "
 			>
 				{faqData.map((
 					faq, 
