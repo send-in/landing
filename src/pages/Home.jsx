@@ -6,9 +6,7 @@ import FAQ from "../layouts/FAQ"
 import Pricing from "../layouts/Pricing"
 // #endregion
 
-const Home = () => {
-  
-  return (
+const Home = () => (
 	<main
 		className="
 			flex flex-col items-center relative h-fit 
@@ -28,30 +26,28 @@ const Home = () => {
 			<Hero />
 		</section>
 
-        <section 
+		<section 
 			className="
-                bg-white flex flex-col  items-center relative  
-                w-screen h-fit overflow-x-clip overscroll-contain 
-                snap-y snap-scroll-points z-20 select-none 
-                cursor-pin p-4 mb-[60vh] small:mb-0 
-            "
+				bg-white flex flex-col  items-center relative  
+				w-screen h-fit overflow-x-clip overscroll-contain 
+				snap-y snap-scroll-points z-20 select-none 
+				cursor-pin p-4 mb-[60vh] small:mb-0 
+			"
 		>
 
-            <Features/>
-            <aside 
-                className="
-                    rounded-3xl w-full
-                    flex flex-col items-center  justify-center
-                    p-10 bg-bluewash text-charcoal-100
-                "
-            >
-                <Pricing/>
-                <FAQ/>
-            </aside>
-        </section>
-
+			<Features/>
+			<aside 
+				className="
+					rounded-3xl w-full
+					flex flex-col items-center  justify-center
+					p-10 bg-bluewash text-charcoal-100
+				"
+			>
+				<Pricing/>
+				<FAQ/>
+			</aside>
+		</section>
 	</main>
-  )
-}
+)
 
 export default Home
