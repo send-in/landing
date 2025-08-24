@@ -1,4 +1,4 @@
-import Logo from "../icons/Logo"
+import Logo from "./Logo"
 import OnboardingCluster from "./CTACluster"
 
 const links = [
@@ -38,19 +38,11 @@ const links = [
 				name: "Tutorials",
 				href: "/"
 			},
-			{
-				name: "Use cases",
-				href: "/"
-			},
 		],
 	},
 	{
 		title: "Assistance",
 		items: [
-			{
-				name: "Help center",
-				href: "/"
-			},
 			{
 				name: "Support",
 				href: "/"
@@ -86,38 +78,17 @@ const links = [
 			},
 		],
 	},
-	{
-		title: "Socials",
-		items: [
-			{
-				name: "Linkedin",
-				href: "/"
-			},
-			{
-				name: "Twitter",
-				href: "/"
-			},
-			{
-				name: "Youtube",
-				href: "/"
-			},
-			{
-				name: "Medium",
-				href: "/"
-			},
-		],
-	},
 ]
 
 const Footer = () => {
 	return (
 		<section
-			className="w-full mt-4  text-white fixed bottom-0 small:relative z-0 p-4"
+			className="w-full mt-4  text-white fixed bottom-0 small:relative z-10 p-4"
 		>
 			<div
 				className="
-					flex flex-col items-center bgGradient bg-cover w-full
-					rounded-3xl p-10 gap-20 relative overflow-hidden z-10
+					flex flex-col items-center bg-blue-100 bg-cover w-full
+					rounded-3xl p-10 gap-12 relative overflow-hidden z-10
 				"
 			>
 
@@ -130,8 +101,7 @@ const Footer = () => {
 				<aside 
 					className="
 						large:flex small:px-10  justify-between 
-						px-10 w-[70%] text-right pb-20
-						font-normal
+						p-10 pt-5 w-[60%] text-right font-normal
 					"
 				>
 					{links.map((category, index) => (
@@ -166,14 +136,6 @@ const Footer = () => {
 
 
 				<p>2025 © SendIn.  support@sendin.com</p>
-
-               <div
-                    className="
-                        bg-noise absolute inset-0 w-full h-full -z-10 opacity-25 
-                        [mask-image:linear-gradient(to_bottom,transparent,black)] 
-                        [mask-repeat:no-repeat] [mask-size:100%_100%]
-                    "
-                />
 			</div>
 
 			

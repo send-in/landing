@@ -43,17 +43,9 @@ const FAQ = () => {
 				flex flex-col items-center gap-10 w-full
 			"
 		>
-			<h3 
-				className="
-					text-5xl font-normal 
-					tracking-tighter
-				"
-			>
-				FAQ
-			</h3>
 
 			<div 
-				className="flex flex-col items-center gap-5 w-[50%] h-[35vh] tracking-tight text-charcoal-100"
+				className="flex flex-col items-center gap-5 w-[70%] h-[55vh] tracking-tight text-charcoal-100"
 			>
 				{faqData.map((
 					faq, 

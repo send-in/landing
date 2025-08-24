@@ -29,7 +29,12 @@ const Home = () => {
 		</section>
 
         <section 
-			className="bg-white flex flex-col  items-center relative  w-screen h-fit overflow-x-clip overscroll-contain snap-y snap-scroll-points z-20 select-none cursor-pin p-4 mb-[79vh] small:mb-0 "
+			className="
+                bg-white flex flex-col  items-center relative  
+                w-screen h-fit overflow-x-clip overscroll-contain 
+                snap-y snap-scroll-points z-20 select-none 
+                cursor-pin p-4 mb-[62vh] small:mb-0 
+            "
 		>
 
             <Features/>
@@ -40,8 +45,8 @@ const Home = () => {
                     p-10 bg-bluewash text-charcoal-100
                 "
             >
-                <FAQ/>
                 <Pricing/>
+                <FAQ/>
             </aside>
         </section>
 

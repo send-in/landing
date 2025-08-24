@@ -12,8 +12,8 @@ const OnboardingCluster = ({
 	return (
 		<aside
 			className="
-				flex flex-col items-center bg-purp p-2 z-10
-				text-lg rounded-2xl
+				flex flex-col items-center z-10
+				text-sm rounded-2xl text-charcoal-100
 			"
 		>
 

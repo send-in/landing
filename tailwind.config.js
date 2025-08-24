@@ -35,10 +35,6 @@ module.exports = {
 				"modal": "modalAnimation 0.1s ease-in-out",
 			},
 			visibility: ["group-hover"],
-			backgroundImage: {
-				"gradient": "linear-gradient(to bottom, #F5F9FF, rgba(245,249,255,0)), url('/public/grainy.svg')",
-                "noise": "url('/public/others/noise.svg')",
-			},
 		},
 	},
 	plugins: [require("tailwindcss-inner-border")],

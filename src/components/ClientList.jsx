@@ -26,7 +26,7 @@ const ClientList = () => {
 	return (
 		<aside 
 			className="
-				z-10 text-white text-md w-[50%] gap-2 font-medium
+				z-10 text-white text-lg w-[80%] gap-5 font-medium
 				flex flex-col items-center overflow-clip my-10 mt-20
 			"
 		>
@@ -43,7 +43,7 @@ const ClientList = () => {
 					idx
 				) => (
 					<img
-						className="w-[600px] object-contain"
+						className="h-[40px] object-contain"
 						alt="company logo"
 						key={idx}
 						src={logo}

@@ -24,7 +24,7 @@ const PlanCard = ({
 		<div
 			className={`
 				bg-white rounded-3xl py-8 p-4 flex flex-col items-center text-center transition
-				${highlighted ? "border-4 border-purple-200" : "border border-grey-100"}
+				${highlighted ? "border-0 border-blue-100" : "border border-grey-100"}
 				font-normal tracking-tighter h-fit
 			`}
 		>

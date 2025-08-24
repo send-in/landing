@@ -10,28 +10,35 @@ const Features = () => {
 			className="
 				flex flex-col items-center z-10
 				text-center p-4 gap-24 relative
-				bg-white w-screen text-white
+				bg-white w-screen text-charcoal-100
 			"
 		>
 			<div
 				className="
 					w-full h-full flex flex-col justify-center 
 					items-center gap-10 rounded-3xl p-20 relative
-					bg-purple-200 bg-cover overflow-hidden
+					bg-blue-100 bg-cover overflow-hidden
 				"
 			>
 
 				<h3 
 					className="
 						text-5xl font-normal 
-						tracking-tighter
+						tracking-tighter text-white
 					"
 				>
 					Bulk Schedule DMs
 				</h3>
 
+
+                <img 
+                    src="others/options.svg"
+                    alt="options"
+                    className="w-[80%]"
+                />
+
 				<div
-					className="flex w-[80%] text-xl tracking-tight font-normal gap-4 h-[53vh] "
+					className="flex w-[80%] text-xl tracking-tighter font-medium gap-4 h-[53vh] text-white z-10"
 				>
 					<aside
 						className="
@@ -39,8 +46,7 @@ const Features = () => {
 							flex flex-col justify-start items-center gap-5
 						"
 					>
-						<h3> Bulk scheduling </h3>
-
+						<h3> Chrome Extension </h3>
 						<div className="relative">
 							<img 
 								src="others/schedule.svg"
@@ -55,7 +61,7 @@ const Features = () => {
 							<img 
 								src="icons/logo.svg"
 								alt="logo"
-								className="absolute top-5 right-5 w-[20%] animate-wiggle drop-shadow-lg"
+								className="absolute top-5 right-5 w-[20%] animate-wiggle"
 							/>
 						</div>
 					</aside>
@@ -95,14 +101,6 @@ const Features = () => {
 					</div>
 
 				</div>
-
-				<div
-					className="
-						bg-noise absolute inset-0 w-full h-full -z-10 opacity-25 
-						[mask-image:linear-gradient(to_bottom,transparent,black)] 
-						[mask-repeat:no-repeat] [mask-size:100%_100%]
-					"
-				/>
 			</div>
 		</section>
 	)

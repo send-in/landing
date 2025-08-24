@@ -17,8 +17,8 @@ const planData = [
 			"1 Custom template",
 			"Bulk scheduling from connection"
 		],
-		buttonColor: "bg-charcoal-200",
-		textColor: "text-charcoal-100",
+		buttonColor: "bg-grey-300",
+		textColor: "text-grey-300",
 		highlighted: false,
 		slider: false,
 		billing: "billing"
@@ -70,17 +70,9 @@ const Pricing = () => {
 		<section 
 			className="
 				font-mada py-16 px-4 flex flex-col 
-				items-center gap-8 mt-20
+				items-center gap-8
 			"
 		>
-			<h3 
-				className="
-					text-5xl font-normal 
-					tracking-tighter
-				"
-			>
-				Pricing
-			</h3>
 
 			<aside 
 				className="flex items-center  bg-white p-1 rounded-full border border-grey-100"
