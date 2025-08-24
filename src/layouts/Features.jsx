@@ -1,5 +1,6 @@
 // #region Imports
 import OnboardingCluster from "../components/CTACluster"
+import ClientList from '../components/ClientList';
 // #endregion
 
 
@@ -16,41 +17,75 @@ const Features = () => {
 			<div
 				className="
 					w-full h-full flex flex-col justify-center 
-					items-center gap-10 rounded-3xl p-20 relative
+					items-center gap-5 rounded-3xl py-20 relative
 					bg-blue-100 bg-cover overflow-hidden
 				"
 			>
 
 				<h3 
 					className="
-						text-5xl font-normal 
+						text-4xl font-normal w-[40%]
 						tracking-tighter text-white
+						leading-8
 					"
 				>
-					Bulk Schedule DMs
+					Approve and launch experiments within hours, not weeks.
 				</h3>
 
+				<p 
+					className="
+						font-normal tracking-tight leading-5
+						text-md text-white w-[30%] mb-10
+					"
+				>
+					Schedule LinkedIn messages across time zones so you never 
+					have to wake up at odd hours and miss a lead again.
+				</p>
 
-                <img 
-                    src="others/options.svg"
-                    alt="options"
-                    className="w-[80%]"
-                />
+
+
+				<div 
+					className="
+						bg-bluewash flex justify-center 
+						rounded-2xl w-[65%] overflow-hidden
+						h-[60vh] relative
+					">
+					<img 
+						src="others/options.svg"
+						alt="options"
+						className="w-[90%] absolute -bottom-14"
+					/>
+				</div>
+
+
+				<ClientList/>
+
 
 				<div
-					className="flex w-[80%] text-2xl tracking-tighter gap-4 h-[53vh] text-charcoal-100 z-10"
+					className="flex w-[65%] text-2xl tracking-tighter gap-4 h-fit text-charcoal-100 z-10"
 				>
 					<aside
 						className="
-							bg-bluewash w-[50%] h-full rounded-2xl p-8 pt-10
-							flex flex-col justify-start items-center gap-5
+							bg-bluewash w-[50%] rounded-2xl p-8 pt-10
+							flex flex-col justify-start items-center gap-2
 						"
 					>
 						<h3
-							className="w-[65%] leading-6"
+							className="w-[80%] leading-6"
 						> 
 							Approve and launch experiments within hours, not weeks.
 						</h3>
+
+						<p 
+							className="
+								font-normal tracking-tight
+								text-sm text-grey-300 w-[80%]
+								mb-10
+							"
+						>
+							Schedule LinkedIn messages across time zones so you never have to wake 
+							up at odd hours and miss a lead again.
+						</p>
 
 						<div className="relative">
 							<img 
@@ -61,7 +96,7 @@ const Features = () => {
 							<img 
 								src="others/options.svg"
 								alt="options"
-								className="absolute -bottom-10 right-0 shadow-md animate-float"
+								className="absolute -bottom-14 right-0 animate-float"
 							/>
 							<img 
 								src="icons/logo.svg"
@@ -78,7 +113,23 @@ const Features = () => {
 								flex flex-col justify-start items-center gap-2
 							"
 						>
-							<h3> Approve and launch experiments within hours, not weeks. </h3>
+							<h3
+								className="w-[80%] leading-6"
+							> 
+								Approve and launch experiments within hours, not weeks.
+							</h3>
+
+							<p 
+								className="
+									font-normal tracking-tight
+									text-sm text-grey-300 w-[80%]
+									mb-10
+								"
+							>
+								Schedule LinkedIn messages across time zones so you never have to wake 
+								up at odd hours and miss a lead again.
+							</p>							
+							
 							<div className="relative">
 								<img 
 									src="others/timezone.svg"
@@ -95,7 +146,7 @@ const Features = () => {
 
 						<aside
 							className="
-								bg-bluewash h-[30%] rounded-2xl p-2
+								bg-bluewash h-[30%] rounded-2xl p-3
 								flex flex-col justify-center items-center gap-2
 							"
 						>

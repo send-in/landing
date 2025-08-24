@@ -22,36 +22,45 @@ const logos = [
 ]
 
 const ClientList = () => {
-
 	return (
-		<aside 
+		<section
 			className="
-				z-10 text-white text-lg w-[80%] gap-5 font-medium
-				flex flex-col items-center overflow-clip my-10 mt-20
+				relative z-10 text-white text-lg w-full gap-5 font-medium
+				flex flex-col items-center overflow-hidden my-32
 			"
 		>
-			<p>20+ Global teams saving hundreds of hours !</p>
+			<p>20+ Global teams saving hundreds of hours!</p>
 
 			<div 
-				className="relative w-full flex animate-scroll gap-12"
+				className="
+					absolute left-0 top-0 
+					h-full w-32 bg-gradient-to-r z-10
+					from-blue-100 to-transparent
+				" 
+			/>
+
+			<div 
+				className="
+					absolute right-0 top-0 
+					h-full w-32 bg-gradient-to-l  z-10
+					from-blue-100 to-transparent
+				" 
+			/>
+
+			<div 
+				className="relative w-full flex animate-scroll gap-12 "
 			>
-				{[
-					...logos, 
-					...logos
-				].map((
-					logo, 
-					idx
-				) => (
+				{[...logos, ...logos].map((logo, idx) => (
 					<img
-						className="h-[40px] object-contain"
+						className="h-[40px] object-contain z-0"
 						alt="company logo"
 						key={idx}
 						src={logo}
 					/>
 				))}
-			</div>
-		</aside>
-	)
-}
 
+			</div>
+		</section>
+	);
+};
 export default ClientList

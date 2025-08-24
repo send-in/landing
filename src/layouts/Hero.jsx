@@ -9,7 +9,6 @@ import {
 } from "framer-motion"
 
 import OnboardingCluster from "../components/CTACluster"
-import ClientList from "../components/ClientList"
 // #endregion
 
 const Hero = () => {
@@ -36,7 +35,7 @@ const Hero = () => {
 		<motion.section 
 			className="
 				flex flex-col items-center z-10
-				text-center p-20 pt-10 gap-6 relative
+				text-center p-20 pt-10 gap-12 relative
 			"
             style={{
                 scale: nextTransitionScale,
@@ -44,7 +43,7 @@ const Hero = () => {
 		>
 
 			<aside
-				className="flex flex-col gap-2 items-center mb-16"
+				className="flex flex-col gap-4 items-center mb-32"
 			>
 				<h1
 					className="
@@ -61,7 +60,7 @@ const Hero = () => {
 				<p 
 					className="
 						w-[45%] font-normal tracking-tight
-						text-md text-grey-300 
+						text-md text-grey-300 leading-5
 					"
 				>
 					Schedule LinkedIn messages across time zones so you never have to wake 
@@ -87,16 +86,15 @@ const Hero = () => {
                 />
             </aside>
 
-			<ClientList/>
 
 			<div 
 				className="
-					rounded-full h-[70vw] w-[70vw] absolute top-[22%] z-0 bg-blue-100 overflow-clip
+					rounded-full h-[60vw] w-[60vw] absolute top-[28%] z-0 bg-blue-100 overflow-clip
 				"
 			/>
 
             <motion.div
-                className="w-screen h-[20vh] small:h-[20vh] relative "
+                className="w-screen h-[12vh] small:h-[20vh] relative "
                 ref={ref}
                 style={{
                     marginBottom: nextTransition,
