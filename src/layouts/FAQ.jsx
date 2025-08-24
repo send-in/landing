@@ -39,7 +39,7 @@ const FAQ = () => {
 	return (
 		<section 
 			className="
-				font-mada py-10 px-4 mb-10 z-20
+				font-mada pt-10 px-4 z-20
 				flex flex-col items-center gap-10 w-full
 			"
 		>

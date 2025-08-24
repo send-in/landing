@@ -33,7 +33,7 @@ const Home = () => {
                 bg-white flex flex-col  items-center relative  
                 w-screen h-fit overflow-x-clip overscroll-contain 
                 snap-y snap-scroll-points z-20 select-none 
-                cursor-pin p-4 mb-[62vh] small:mb-0 
+                cursor-pin p-4 mb-[60vh] small:mb-0 
             "
 		>
 

@@ -69,7 +69,7 @@ const Pricing = () => {
 	return (
 		<section 
 			className="
-				font-mada py-16 px-4 flex flex-col 
+				font-mada py-6 px-4 flex flex-col 
 				items-center gap-8
 			"
 		>

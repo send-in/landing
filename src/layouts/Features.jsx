@@ -38,15 +38,20 @@ const Features = () => {
                 />
 
 				<div
-					className="flex w-[80%] text-xl tracking-tighter font-medium gap-4 h-[53vh] text-white z-10"
+					className="flex w-[80%] text-2xl tracking-tighter gap-4 h-[53vh] text-charcoal-100 z-10"
 				>
 					<aside
 						className="
-							bg-white bg-opacity-35 w-[50%] h-full rounded-2xl p-8 pt-10
+							bg-bluewash w-[50%] h-full rounded-2xl p-8 pt-10
 							flex flex-col justify-start items-center gap-5
 						"
 					>
-						<h3> Chrome Extension </h3>
+						<h3
+							className="w-[65%] leading-6"
+						> 
+							Approve and launch experiments within hours, not weeks.
+						</h3>
+
 						<div className="relative">
 							<img 
 								src="others/schedule.svg"
@@ -69,11 +74,11 @@ const Features = () => {
 					<div className="flex flex-col w-[50%] gap-4 h-full">
 						<aside
 							className="
-								bg-white bg-opacity-35 h-[70%] rounded-2xl p-8 pt-10  
+								bg-bluewash h-[70%] rounded-2xl p-8 pt-10  
 								flex flex-col justify-start items-center gap-2
 							"
 						>
-							<h3> Timezone intelligence </h3>
+							<h3> Approve and launch experiments within hours, not weeks. </h3>
 							<div className="relative">
 								<img 
 									src="others/timezone.svg"
@@ -90,7 +95,7 @@ const Features = () => {
 
 						<aside
 							className="
-								bg-white bg-opacity-35 h-[30%] rounded-2xl p-2
+								bg-bluewash h-[30%] rounded-2xl p-2
 								flex flex-col justify-center items-center gap-2
 							"
 						>
