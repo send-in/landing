@@ -1,5 +1,5 @@
 // #region Imports
-import OnboardingCluster from "../components/OnboardingCluster"
+import OnboardingCluster from "../components/CTACluster"
 // #endregion
 
 
@@ -43,19 +43,19 @@ const Features = () => {
 
 						<div className="relative">
 							<img 
-								src="/schedule.svg"
+								src="others/schedule.svg"
 								alt="schedule"
 								className="w-[80%]"
 							/>
 							<img 
-								src="/options.svg"
+								src="others/options.svg"
 								alt="options"
 								className="absolute -bottom-10 right-0 shadow-md animate-float"
 							/>
 							<img 
-								src="/logo.svg"
+								src="icons/logo.svg"
 								alt="logo"
-								className="absolute top-5 right-5 w-[20%] animate-wiggle"
+								className="absolute top-5 right-5 w-[20%] animate-wiggle drop-shadow-lg"
 							/>
 						</div>
 					</aside>
@@ -70,12 +70,12 @@ const Features = () => {
 							<h3> Timezone intelligence </h3>
 							<div className="relative">
 								<img 
-									src="/timezone.svg"
+									src="others/timezone.svg"
 									alt="timezone"
 									className="w-[70%]"
 								/>
 								<img 
-									src="/switch.svg"
+									src="others/switch.svg"
 									alt="switch"
 									className="absolute bottom-0 right-5 w-[50%]"
 								/>

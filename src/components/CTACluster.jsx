@@ -57,7 +57,7 @@ const OnboardingCluster = ({
 				>
 					<img
 						className="h-full"
-						src="/store.svg"
+						src="/icons/store.svg"
 						alt="chrome-web-store"
 					/>
 				</a>
@@ -66,17 +66,17 @@ const OnboardingCluster = ({
 
 			{
 				!nooffer &&
-				<div className="flex gap-2 items-center text-white">
+				<div className="flex gap-2 items-center text-white text-md whitespace-nowrap justify-center">
 					<p>7-day free trial</p>
 					<img
 						className="h-[60%]"
-						src="/globe.svg"
+						src="/icons/globe.svg"
 						alt="globe"
 					/>
 					<p>Chrome extension</p>
 					<img
 						className="h-[60%]"
-						src="/globe.svg"
+						src="/icons/globe.svg"
 						alt="globe"
 					/>
 					<p>5 minute setup</p>

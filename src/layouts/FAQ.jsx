@@ -71,7 +71,7 @@ const FAQ = () => {
 								{faq.question}
 							</h3>
 							<img
-								src="/arrow.svg"
+								src="/icons/arrow.svg"
 								alt="toggle arrow"
 								className={`w-5 h-5 transition-transform duration-300 ease-in-out ${
 									openIndex === index ? "rotate-180" : "rotate-0"

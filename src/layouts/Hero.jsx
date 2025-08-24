@@ -1,6 +1,6 @@
 // #region Imports
 import ClientList from "../components/ClientList"
-import OnboardingCluster from "../components/OnboardingCluster"
+import OnboardingCluster from "../components/CTACluster"
 // #endregion
 
 const Hero = () => {

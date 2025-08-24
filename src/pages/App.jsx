@@ -1,6 +1,7 @@
 // #region Imports
 // import { useState } from "react"
 import { ReactLenis } from "@studio-freight/react-lenis"
+import Footer from "../components/Footer"
 
 // import Loading from "../components/Loader/index"
 // import Footer from "../components/Footer"
@@ -15,7 +16,7 @@ const App = () => {
 	return (
 		<main 
 			className="
-				p-2 w-screen h-screen
+				p-2 w-screen h-screen flex flex-col items-center
 			"
 		>
 
@@ -35,7 +36,7 @@ const App = () => {
 
 						<Home />
 
-						{/* <Footer /> */}
+						<Footer />
 				{/* </ReactLenis> */}
 		</main>
 	)

@@ -1,5 +1,5 @@
 import Logo from "../icons/Logo"
-import OnboardingCluster from "./OnboardingCluster"
+import OnboardingCluster from "./CTACluster"
 
 const links = [
 	{
@@ -112,7 +112,7 @@ const links = [
 const Footer = () => {
 	return (
 		<section
-			className="w-full mt-4 mb-3 text-white"
+			className="w-full mt-4  text-white fixed bottom-0 small:relative z-0 p-4"
 		>
 			<div
 				className="

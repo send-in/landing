@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar"
 import Features from "../layouts/Features"
 import FAQ from "../layouts/FAQ"
 import Pricing from "../layouts/Pricing"
-import Footer from "../components/Footer"
 // #endregion
 
 const Home = () => {
@@ -14,9 +13,8 @@ const Home = () => {
 		className="
 			flex flex-col items-center relative h-fit 
 			overflow-x-clip overscroll-contain 
-			snap-y snap-scroll-points z-20 p-2
-			mb-[100vh] small:mb-0 select-none
-			font-mada
+			snap-y snap-scroll-points z-20 p-4
+			select-none font-mada w-screen
 		"
 	>
 		<section 
@@ -30,20 +28,23 @@ const Home = () => {
 			<Hero />
 		</section>
 
-		<Features/>
-
-		<section 
-			className="
-				rounded-3xl w-full
-				flex flex-col items-center  justify-center
-                p-10 bg-bluewash text-charcoal-100
-			"
+        <section 
+			className="bg-white flex flex-col  items-center relative  w-screen h-fit overflow-x-clip overscroll-contain snap-y snap-scroll-points z-20 select-none cursor-pin p-4 mb-[79vh] small:mb-0 "
 		>
-			<FAQ/>
-			<Pricing/>
-		</section>
 
-		<Footer/>
+            <Features/>
+            <aside 
+                className="
+                    rounded-3xl w-full
+                    flex flex-col items-center  justify-center
+                    p-10 bg-bluewash text-charcoal-100
+                "
+            >
+                <FAQ/>
+                <Pricing/>
+            </aside>
+        </section>
+
 	</main>
   )
 }

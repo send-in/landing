@@ -107,7 +107,7 @@ const PlanCard = ({
 					<li key={i}>
 						<img 
 							className="inline-block mr-2" 
-							src="check.svg" 
+							src="/icons/check.svg" 
 							alt="Check icon" 
 						/>
 						{f}
