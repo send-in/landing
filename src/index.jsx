@@ -1,7 +1,7 @@
 // #region Imports
 import "./styles/index.css"
 
-import App from "./pages/App"
+import Home from "./pages/Home"
 import CookiePolicy from "./pages/Policy/CookiePolicy"
 import TermsAndConditions from "./pages/Policy/TermsCondition"
 import Pricing from "./pages/Policy/Pricing"
@@ -22,8 +22,8 @@ root.render(
 	<>
 		<BrowserRouter>
 			<Routes>
-				<Route index element={<App />} />
-				<Route path="*" element={<App />} />
+				<Route index element={<Home />} />
+				<Route path="*" element={<Home />} />
 
 				<Route path="/terms-conditions" element={<TermsAndConditions />} />
 				<Route path="/pricing" element={<Pricing />} />
@@ -31,14 +31,11 @@ root.render(
 				<Route path="/support" element={<Support />} />
 
 
-				<Route path="/tutorials" element={<App />} />
-				<Route path="/getting-started" element={<App />} />
-				<Route path="/blogs" element={<App />} />
-
-				<Route path="/blog/chrome-extension" element={<App />} />
-				<Route path="/blog/bulk-schedule" element={<App />} />
-				<Route path="/blog/message-templates" element={<App />} />
-				<Route path="/blog/timezone-intelligence" element={<App />} />
+				<Route path="/blogs" element={<Home />} />
+				<Route path="/blog/chrome-extension" element={<Home />} />
+				<Route path="/blog/bulk-schedule" element={<Home />} />
+				<Route path="/blog/message-templates" element={<Home />} />
+				<Route path="/blog/timezone-intelligence" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	</>
