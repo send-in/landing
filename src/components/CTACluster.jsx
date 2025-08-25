@@ -1,5 +1,5 @@
 // #region Imports
-import { useState } from "react"
+// import { useState } from "react"
 // #endregion
 
 
@@ -7,7 +7,7 @@ const OnboardingCluster = ({
 	nooffer=false
 }) => {
 
-	const [email, setEmail] = useState("")
+	// const [email, setEmail] = useState("")
 
 	return (
 		<aside
