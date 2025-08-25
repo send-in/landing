@@ -75,6 +75,6 @@ const ClientList = () => {
 
 			</div>
 		</section>
-	);
-};
+	)
+}
 export default ClientList

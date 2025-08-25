@@ -17,8 +17,8 @@ const planData = [
 			"1 Custom template",
 			"Bulk scheduling from connection"
 		],
-		buttonColor: "bg-grey-300",
-		textColor: "text-grey-300",
+		buttonColor: "bg-charcoal-100",
+		textColor: "text-charcoal-100",
 		highlighted: false,
 		slider: false,
 		billing: "billing"

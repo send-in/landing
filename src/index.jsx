@@ -1,5 +1,5 @@
 // #region Imports
-import "./styles/index.css"
+import "./index.css"
 
 import Home from "./pages/Home"
 import CookiePolicy from "./pages/Policy/CookiePolicy"
@@ -13,6 +13,8 @@ import {
 	Route 
 } from "react-router"
 import { createRoot } from "react-dom/client"
+import Blogs from "./pages/Content/Blogs"
+import BulkScheduleBlog from "./pages/Content/BulkSchedule"
 // #endregion
 
 const rootElement = document.getElementById("root")
@@ -31,11 +33,12 @@ root.render(
 				<Route path="/support" element={<Support />} />
 
 
-				<Route path="/blogs" element={<Home />} />
+				<Route path="/blogs" element={<Blogs />} />
 				<Route path="/blog/chrome-extension" element={<Home />} />
-				<Route path="/blog/bulk-schedule" element={<Home />} />
+				<Route path="/blog/bulk-schedule" element={<BulkScheduleBlog />} />
 				<Route path="/blog/message-templates" element={<Home />} />
 				<Route path="/blog/timezone-intelligence" element={<Home />} />
+				<Route path="/blog/use-cases" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	</>

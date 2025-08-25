@@ -27,7 +27,7 @@ const Home = () => (
             className="
                 flex flex-col items-center relative h-fit 
                 overflow-x-clip overscroll-contain 
-                snap-y snap-scroll-points z-20 p-4
+                snap-y snap-scroll-points z-20 p-4 xlarge:p-8
                 select-none font-mada w-screen xlarge:mb-[52vh] 
                 mb-[60vh] small:mb-0
             "
@@ -49,7 +49,7 @@ const Home = () => (
                     bg-white flex flex-col  items-center relative  
                     w-screen h-fit overflow-x-clip overscroll-contain 
                     snap-y snap-scroll-points z-20 select-none 
-                    cursor-pin p-4 small:pb-0
+                    cursor-pin p-4 xlarge:p-8 small:pb-0
                 "
             >
 

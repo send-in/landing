@@ -8,7 +8,6 @@ const CookiePolicy = () => {
 
 	return (
 		<main>
-
 			<aside className="mx-auto max-w-4xl px-6 py-14 text-left text-gray-800 text-charcoal-100">
 				<Navbar
                     bg="bg-bluewash"

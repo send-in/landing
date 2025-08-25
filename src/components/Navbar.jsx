@@ -11,7 +11,7 @@ const Navbar = ({
 			className={`
 				p-2 pl-4 min-w-[50%] small:min-w-full xlarge:min-w-[30%] 
 				text-sm xlarge:text-lg mb-4 flex items-center gap-10 small:gap-2 justify-between
-				rounded-full font-medium text-charcoal-100 ${bg}
+				rounded-full font-medium text-charcoal-100 ${bg} max-w-4xl
 			`}
 		>
 			<Logo 

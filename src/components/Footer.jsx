@@ -1,5 +1,7 @@
+// #region Imports
 import Logo from "./Logo"
 import OnboardingCluster from "./CTACluster"
+// #endregion
 
 const links = [
 	{
@@ -32,7 +34,7 @@ const links = [
 				href: "/getting-started"
 			},
 			{
-				name: "Blog",
+				name: "Blogs",
 				href: "/blogs"
 			},
 			{
@@ -92,7 +94,7 @@ const Footer = ({
 		<section
 			className={`
                 w-full mt-4 small:mt-0 text-white bottom-0 
-                small:relative z-10 p-4 small:pt-0
+                small:relative z-10 p-4 xlarge:p-8 small:pt-0
                 ${fixed?"fixed":"relative"}
             `}
 			id="footer"
