@@ -52,8 +52,8 @@ const Features = () => {
 					className="
 						bg-bluewash flex justify-center 
 						rounded-2xl w-[70%] small:w-[90%] 
-						overflow-hidden h-[60vh] small:h-[25vh] 
-						relative xlarge:h-[75vh]
+						overflow-hidden small:h-[25vh] 
+						relative h-[75vh]
 					">
 					<img 
 						src="others/options.svg"
@@ -131,7 +131,7 @@ const Features = () => {
 
 						<div
 							className="
-								bg-bluewash h-[30%] rounded-2xl p-3
+								bg-bluewash h-[30%] rounded-2xl p-3 py-6
 								flex flex-col justify-center items-center gap-2
 								xlarge:py-8 xlarge:text-4xl xlarge:gap-8
 							"

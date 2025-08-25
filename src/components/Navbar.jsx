@@ -2,15 +2,17 @@
 import Logo from './Logo';
 // #endregion
 
-const Navbar = () => {
+const Navbar = ({
+    bg="bg-white"
+}) => {
 
 	return (
 		<nav 
-			className="
+			className={`
 				p-2 pl-4 min-w-[50%] small:min-w-full xlarge:min-w-[30%] 
 				text-sm xlarge:text-lg mb-4 flex items-center gap-10 small:gap-2 justify-between
-				bg-white rounded-full font-medium text-charcoal-100
-			"
+				rounded-full font-medium text-charcoal-100 ${bg}
+			`}
 		>
 			<Logo 
 				size={90}
@@ -21,7 +23,7 @@ const Navbar = () => {
 				className="flex gap-5 small:hidden"
 			>
 				<a
-					href="#use-cases"
+					href="/use-cases"
 					className="
 						opacity-70 hover:opacity-100
 						transition-all ease-in-out delay-100 
@@ -31,7 +33,7 @@ const Navbar = () => {
 					Use Cases
 				</a>
 				<a
-					href="#pricing"
+					href="/pricing"
 					className="
 						opacity-70 hover:opacity-100
 						transition-all ease-in-out delay-100 

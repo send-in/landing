@@ -12,7 +12,8 @@ const Home = () => (
 			flex flex-col items-center relative h-fit 
 			overflow-x-clip overscroll-contain 
 			snap-y snap-scroll-points z-20 p-4
-			select-none font-mada w-screen mb-[52vh] small:mb-0
+			select-none font-mada w-screen xlarge:mb-[52vh] 
+            mb-[60vh] small:mb-0
 		"
 	>
 		<section 

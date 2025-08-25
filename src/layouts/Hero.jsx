@@ -44,7 +44,7 @@ const Hero = () => {
 		>
 
 			<aside
-				className="flex flex-col gap-4 items-center mb-32 small:mb-20"
+				className="flex flex-col gap-4 items-center mb-32 large:mb-16 small:mb-20"
 			>
 				<h1
 					className="
@@ -74,7 +74,7 @@ const Hero = () => {
 			<OnboardingCluster/>
 
             <aside
-                className="flex flex-col items-center mt-5 small:mt-0"
+                className="flex flex-col items-center mt-5 large:mt-2 small:mt-0"
             >
                 <img
                     className="
@@ -88,7 +88,7 @@ const Hero = () => {
                 <img
                     className="
                         relative z-10 w-full small:w-[80%]
-                        xlarge:w-[35vw]
+                        xlarge:w-[35vw] large:w-[40vw]
                     "
                     src="others/textbox.svg" 
                     alt="extension"

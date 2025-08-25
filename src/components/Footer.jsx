@@ -37,11 +37,11 @@ const links = [
 			},
 			{
 				name: "Tutorials",
-				href: "/tutorials"
+				href: "https://www.youtube.com/@SendInLinkedin"
 			},
 			{
 				name: "Use Cases",
-				href: "#use-cases"
+				href: "/use-cases"
 			},
 		],
 	},
@@ -67,7 +67,7 @@ const links = [
 		items: [
 			{
 				name: "Pricing",
-				href: "#pricing"
+				href: "/pricing"
 			},
 			{
 				name: "Terms",
@@ -77,18 +77,24 @@ const links = [
 				name: "Sitemap",
 				href: "/sitemap.xml"
 			},
-			{
-				name: "FAQ",
-				href: "#faq"
+            {
+				name: "Press Kit",
+				href: "/SendIn_PressKit.zip"
 			},
 		],
 	},
 ]
 
-const Footer = () => {
+const Footer = ({
+    fixed=true
+}) => {
 	return (
 		<section
-			className="w-full mt-4 small:mt-0 text-white fixed bottom-0 small:relative z-10 p-4 small:pt-0"
+			className={`
+                w-full mt-4 small:mt-0 text-white bottom-0 
+                small:relative z-10 p-4 small:pt-0
+                ${fixed?"fixed":"relative"}
+            `}
 			id="footer"
 		>
 			<div
@@ -127,10 +133,11 @@ const Footer = () => {
 							{category.items.map((link, idx) => (
 								<a
 									className="
-                                        brightness-90 hover:brightness-200
 										transition-all ease-in-out delay-100 
 										cursor-pointer
 									"
+                                    target="_blank"
+                                    rel="noreferrer"
 									alt={link.name}
 									href={link.href}
 									key={idx}

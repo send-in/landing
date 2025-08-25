@@ -30,10 +30,10 @@ module.exports = {
 			},
 			large: { 
 				min: "1030px", 
-				max: "1439px" 
+				max: "1599px" 
 			},
 			xlarge: { 
-				min: "1440px" 
+				min: "1600px" 
 			},
 		},
 		extend: {

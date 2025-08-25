@@ -2,6 +2,10 @@
 import "./styles/index.css"
 
 import App from "./pages/App"
+import CookiePolicy from "./pages/Policy/CookiePolicy"
+import TermsAndConditions from "./pages/Policy/TermsCondition"
+import Pricing from "./pages/Policy/Pricing"
+import Support from "./pages/Support"
 
 import { 
 	BrowserRouter, 
@@ -21,10 +25,13 @@ root.render(
 				<Route index element={<App />} />
 				<Route path="*" element={<App />} />
 
+				<Route path="/terms-conditions" element={<TermsAndConditions />} />
+				<Route path="/pricing" element={<Pricing />} />
+                <Route path="/cookie-policy" element={<CookiePolicy />} />
+				<Route path="/support" element={<Support />} />
+
+
 				<Route path="/tutorials" element={<App />} />
-				<Route path="/support" element={<App />} />
-				<Route path="/cookie-policy" element={<App />} />
-				<Route path="/terms-conditions" element={<App />} />
 				<Route path="/getting-started" element={<App />} />
 				<Route path="/blogs" element={<App />} />
 
