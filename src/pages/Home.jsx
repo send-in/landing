@@ -12,12 +12,12 @@ const Home = () => (
 			flex flex-col items-center relative h-fit 
 			overflow-x-clip overscroll-contain 
 			snap-y snap-scroll-points z-20 p-4
-			select-none font-mada w-screen
+			select-none font-mada w-screen mb-[52vh] small:mb-0
 		"
 	>
 		<section 
 			className="
-				rounded-3xl w-full h-screen
+				rounded-t-3xl w-full h-screen
 				flex flex-col items-center px-10 pt-10
 				bg-bluewash text-charcoal-100 small:px-3
 				overflow-hidden
@@ -32,7 +32,7 @@ const Home = () => (
 				bg-white flex flex-col  items-center relative  
 				w-screen h-fit overflow-x-clip overscroll-contain 
 				snap-y snap-scroll-points z-20 select-none 
-				cursor-pin p-4 mb-[52vh] small:mb-0 small:pb-0 xlarge:pb-2
+				cursor-pin p-4 small:pb-0
 			"
 		>
 

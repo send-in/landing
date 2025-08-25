@@ -67,7 +67,8 @@ const Pricing = () => {
 	const [billing, setBilling] = useState("MONTHLY")
 
 	return (
-		<section 
+		<section
+			id="pricing"
 			className="
 				font-mada py-6 px-4 flex flex-col 
 				items-center gap-8 small:px-0 

@@ -37,7 +37,8 @@ const FAQ = () => {
 		setOpenIndex(openIndex === index ? 0 : index)
 
 	return (
-		<section 
+		<section
+			id="faq"
 			className="
 				font-mada pt-10 px-4 z-20 small:px-0
 				flex flex-col items-center gap-10 w-full

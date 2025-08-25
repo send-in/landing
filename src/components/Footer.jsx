@@ -7,20 +7,21 @@ const links = [
 		items: [
 			{
 				name: "Chrome extension",
-				href: "/"
+				href: "/blog/chrome-extension"
 			},
 			{
 				name: "Bulk schedule",
-				href: "/"
+				href: "/blog/bulk-schedule"
 			},
 			{
 				name: "Message templates",
-				href: "/"
+				href: "/blog/message-templates"
 			},
 			{
 				name: "Timezone intelligence",
-				href: "/"
+				href: "/blog/timezone-intelligence"
 			},
+			
 		],
 	},
 	{
@@ -28,15 +29,19 @@ const links = [
 		items: [
 			{
 				name: "Get started",
-				href: "/"
+				href: "/getting-started"
 			},
 			{
 				name: "Blog",
-				href: "/"
+				href: "/blogs"
 			},
 			{
 				name: "Tutorials",
-				href: "/"
+				href: "/tutorials"
+			},
+			{
+				name: "Use Cases",
+				href: "#use-cases"
 			},
 		],
 	},
@@ -45,15 +50,15 @@ const links = [
 		items: [
 			{
 				name: "Support",
-				href: "/"
+				href: "/support"
 			},
 			{
 				name: "Custom solution",
-				href: "/"
+				href: "mailto:someone@example.com"
 			},
 			{
 				name: "Cookie Policy",
-				href: "/"
+				href: "/cookie-policy"
 			},
 		],
 	},
@@ -62,19 +67,19 @@ const links = [
 		items: [
 			{
 				name: "Pricing",
-				href: "/"
+				href: "#pricing"
 			},
 			{
 				name: "Terms",
-				href: "/"
+				href: "/terms-conditions"
 			},
 			{
 				name: "Sitemap",
-				href: "/"
+				href: "/sitemap.xml"
 			},
 			{
 				name: "FAQ",
-				href: "/"
+				href: "#faq"
 			},
 		],
 	},
@@ -84,11 +89,12 @@ const Footer = () => {
 	return (
 		<section
 			className="w-full mt-4 small:mt-0 text-white fixed bottom-0 small:relative z-10 p-4 small:pt-0"
+			id="footer"
 		>
 			<div
 				className="
 					flex flex-col items-center bg-blue-100 bg-cover w-full
-					rounded-3xl p-10 gap-12 xlarge:gap-24 relative overflow-hidden z-10
+					rounded-3xl p-10 gap-12 xlarge:gap-24 relative overflow-hidden
 				"
 			>
 
@@ -104,7 +110,7 @@ const Footer = () => {
 					className="
 						flex small:flex-col  justify-between 
 						p-10 pt-5 small:px-4 w-[60%] small:w-full text-right font-normal
-						small:p-2 small:gap-4
+						small:p-2 small:gap-4 xlarge:w-[50%]
 					"
 				>
 					{links.map((category, index) => (

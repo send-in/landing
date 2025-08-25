@@ -21,7 +21,7 @@ const Navbar = () => {
 				className="flex gap-5 small:hidden"
 			>
 				<a
-					href="/"
+					href="#use-cases"
 					className="
 						opacity-70 hover:opacity-100
 						transition-all ease-in-out delay-100 
@@ -31,17 +31,7 @@ const Navbar = () => {
 					Use Cases
 				</a>
 				<a
-					href="/"
-					className="
-						opacity-70 hover:opacity-100
-						transition-all ease-in-out delay-100 
-						cursor-pointer
-					"
-				>
-					Resources
-				</a>
-				<a
-					href="/"
+					href="#pricing"
 					className="
 						opacity-70 hover:opacity-100
 						transition-all ease-in-out delay-100 
@@ -49,6 +39,16 @@ const Navbar = () => {
 					"
 				>
 					Pricing
+				</a>
+				<a
+					href="/blogs"
+					className="
+						opacity-70 hover:opacity-100
+						transition-all ease-in-out delay-100 
+						cursor-pointer
+					"
+				>
+					Resources
 				</a>
 			</aside>
 

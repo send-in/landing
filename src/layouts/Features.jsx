@@ -69,6 +69,7 @@ const Features = () => {
 				<ClientList/>
 
 				<aside
+					id="use-cases"
 					className="
 						flex w-[70%] text-2xl tracking-tighter 
 						gap-4 h-fit text-charcoal-100 z-10
