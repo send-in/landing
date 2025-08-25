@@ -39,26 +39,34 @@ const FAQ = () => {
 	return (
 		<section 
 			className="
-				font-mada pt-10 px-4 z-20
+				font-mada pt-10 px-4 z-20 small:px-0
 				flex flex-col items-center gap-10 w-full
 			"
 		>
 
 			<div 
-				className="flex flex-col items-center gap-5 w-[70%] h-[55vh] tracking-tight text-charcoal-100"
+				className="
+					flex flex-col items-center gap-5 
+					w-[70%] h-[55vh] small:h-[80vh] tracking-tight small:w-full
+					text-charcoal-100 xlarge:w-[50%]
+				"
 			>
 				{faqData.map((
 					faq, 
 					index
 				) => (
 					<div
-						className="bg-white rounded-xl border border-grey-100 p-4 cursor-pointer transition-transform ease-in-out delay-100 w-full"
+						className="
+							bg-white rounded-xl border border-grey-100 
+							p-4 cursor-pointer transition-transform ease-in-out 
+							delay-100 w-full xlarge:p-6
+						"
 						onClick={() => toggleFAQ(index)}
 						key={index}
 					>
 						<div className="flex justify-between items-center">
 							<h3 
-								className="text-xl font-normal"
+								className="text-xl font-normal xlarge:text-2xl"
 							>
 								{faq.question}
 							</h3>
@@ -77,7 +85,7 @@ const FAQ = () => {
 							}`}
 						>
 							<p 
-								className="text-md text-charcoal-100"
+								className="text-md text-charcoal-100 xlarge:text-xl xlarge:font"
 							>
 								{faq.answer}
 							</p>

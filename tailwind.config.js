@@ -25,8 +25,16 @@ module.exports = {
 			mada: ["Mada", "sans-serif"],
 		},
 		screens: {
-			small: { max: "1030px" },
-			large: { min: "1030px" },
+			small: { 
+				max: "1030px" 
+			},
+			large: { 
+				min: "1030px", 
+				max: "1439px" 
+			},
+			xlarge: { 
+				min: "1440px" 
+			},
 		},
 		extend: {
 			animation: {

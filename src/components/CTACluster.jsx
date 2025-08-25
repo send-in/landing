@@ -14,11 +14,15 @@ const OnboardingCluster = ({
 			className="
 				flex flex-col items-center z-10
 				text-sm rounded-2xl text-charcoal-100
+				xlarge:text-xl
 			"
 		>
 
 			<div
-				className="flex justify-center items-center gap-2 w-full"
+				className="
+					flex justify-center items-center gap-2 w-full
+					small:w-[80%]
+				"
 			>
 				<div
 					className="
@@ -36,7 +40,7 @@ const OnboardingCluster = ({
 					<a
 						href="/"
 						className="
-							px-5 py-1 rounded-full w-[35%] 
+							px-5 py-1 rounded-full w-[35%] small:w-fit small:px-3
 							text-white hover:bg-blue-200 bg-blue-100
 							transition-all ease-in-out delay-100 
 							cursor-pointer whitespace-nowrap

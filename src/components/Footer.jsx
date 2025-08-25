@@ -83,12 +83,12 @@ const links = [
 const Footer = () => {
 	return (
 		<section
-			className="w-full mt-4  text-white fixed bottom-0 small:relative z-10 p-4"
+			className="w-full mt-4 small:mt-0 text-white fixed bottom-0 small:relative z-10 p-4 small:pt-0"
 		>
 			<div
 				className="
 					flex flex-col items-center bg-blue-100 bg-cover w-full
-					rounded-3xl p-10 gap-12 relative overflow-hidden z-10
+					rounded-3xl p-10 gap-12 xlarge:gap-24 relative overflow-hidden z-10
 				"
 			>
 
@@ -96,21 +96,24 @@ const Footer = () => {
 					size={110}
 				/>
 
-				<OnboardingCluster/>
+				<OnboardingCluster 
+					nooffer
+				/>
 
 				<aside 
 					className="
-						large:flex small:px-10  justify-between 
-						p-10 pt-5 w-[60%] text-right font-normal
+						flex small:flex-col  justify-between 
+						p-10 pt-5 small:px-4 w-[60%] small:w-full text-right font-normal
+						small:p-2 small:gap-4
 					"
 				>
 					{links.map((category, index) => (
 						<div 
 							key={index} 
-							className="text-md flex flex-col items-start"
+							className="text-md xlarge:text-lg flex flex-col items-start small:w-fit"
 						>
 							<p 
-								className="text-2xl"
+								className="text-2xl small:text-xl xlarge:text-3xl"
 							>
 								{category.title}
 							</p>

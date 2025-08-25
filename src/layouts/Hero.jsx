@@ -22,20 +22,21 @@ const Hero = () => {
     const nextTransition = useTransform(
         scrollYProgress,
         [0.6, 1],
-        ["-55vh", "0vh"],
+        ["-20vh", "0vh"],
     )
 
     const nextTransitionScale = useTransform(
         scrollYProgress, 
         [0, 1], 
-        [0.8, 1]
+        [0.9, 1]
     )
 
 	return (
 		<motion.section 
 			className="
 				flex flex-col items-center z-10
-				text-center p-20 pt-10 gap-12 relative
+				text-center p-20 pt-10 xlarge:pt-24
+                small:pt-20 gap-12 small:gap-14 relative
 			"
             style={{
                 scale: nextTransitionScale,
@@ -43,12 +44,13 @@ const Hero = () => {
 		>
 
 			<aside
-				className="flex flex-col gap-4 items-center mb-32"
+				className="flex flex-col gap-4 items-center mb-32 small:mb-20"
 			>
 				<h1
 					className="
-						w-[60%] tracking-tighter
-						font-medium text-6xl
+						w-[60%] small:w-[90%] tracking-tighter
+						font-medium text-6xl small:text-5xl
+                        xlarge:text-7xl
 					"
 				>
 					<span className="text-blue-100">
@@ -59,8 +61,8 @@ const Hero = () => {
 
 				<p 
 					className="
-						w-[45%] font-normal tracking-tight
-						text-md text-grey-300 leading-5
+						w-[45%] small:w-[75%] font-normal tracking-tight
+						text-md xlarge:text-xl text-grey-300 leading-5
 					"
 				>
 					Schedule LinkedIn messages across time zones so you never have to wake 
@@ -72,15 +74,22 @@ const Hero = () => {
 			<OnboardingCluster/>
 
             <aside
-                className="flex flex-col items-center mt-5"
+                className="flex flex-col items-center mt-5 small:mt-0"
             >
                 <img
-                    className="relative z-20 w-[40%] -mb-32"
+                    className="
+                        relative z-20 w-[40%] small:w-[50%] 
+                        xlarge:w-[45%]
+                        -mb-32 small:-mb-12
+                    "
                     src="others/timezone.svg" 
                     alt="extension"
                 />
                 <img
-                    className="relative z-10 w-full"
+                    className="
+                        relative z-10 w-full small:w-[80%]
+                        xlarge:w-[35vw]
+                    "
                     src="others/textbox.svg" 
                     alt="extension"
                 />
@@ -89,7 +98,11 @@ const Hero = () => {
 
 			<div 
 				className="
-					rounded-full h-[60vw] w-[60vw] absolute top-[28%] z-0 bg-blue-100 overflow-clip
+					rounded-full absolute small:top-[30%]
+                    h-[90vh] w-[90vh] top-[28%]
+                    xlarge:h-[100vh] xlarge:w-[100vh]
+                    small:h-[160vw] small:w-[160vw] 
+                    z-0 bg-blue-100 overflow-clip
 				"
 			/>
 

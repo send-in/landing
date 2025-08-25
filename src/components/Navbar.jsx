@@ -7,18 +7,18 @@ const Navbar = () => {
 	return (
 		<nav 
 			className="
-				p-2 pl-4 min-w-[50%] text-sm mb-4
-				flex items-center gap-10 justify-between
+				p-2 pl-4 min-w-[50%] small:min-w-full xlarge:min-w-[30%] 
+				text-sm xlarge:text-lg mb-4 flex items-center gap-10 small:gap-2 justify-between
 				bg-white rounded-full font-medium text-charcoal-100
 			"
 		>
 			<Logo 
-				size={80} 
+				size={90}
 				fill="#2F2F2F"
 			/>
 
 			<aside 
-				className="flex gap-5"
+				className="flex gap-5 small:hidden"
 			>
 				<a
 					href="/"
@@ -58,7 +58,7 @@ const Navbar = () => {
 					px-6 py-2 rounded-full
 					text-white hover:bg-blue-200 bg-blue-100
 					transition-all ease-in-out delay-100 
-					cursor-pointer
+					cursor-pointer 
 				"
 			>
 				Signup

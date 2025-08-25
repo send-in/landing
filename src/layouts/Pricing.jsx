@@ -6,7 +6,7 @@ import PlanCard from "../components/PlanCard"
 const planData = [
     {
 		title: "Free plan",
-		description: "It is a long established fact that a reader will be distracted by the readable content o",
+		description: "It is a long established fact that a reader will be distracted by the readable content",
 		price: "0",
 		messages: "20",
 		buttonText: "Get Started Today",
@@ -25,7 +25,7 @@ const planData = [
     },
     {
 		title: "Pro Plan",
-		description: "It is a long established fact that a reader will be distracted by the readable content o",
+		description: "It is a long established fact that a reader will be distracted by the readable content",
 		price: "25",
 		messages: "200",
 		buttonText: "Get Started Today",
@@ -44,7 +44,7 @@ const planData = [
     },
     {
 		title: "Enterprise Plan",
-		description: "It is a long established fact that a reader will be distracted by the readable content o",
+		description: "It is a long established fact that a reader will be distracted by the readable content",
 		messages: "∞",
 		buttonText: "Connect with us",
 		features: [
@@ -70,16 +70,20 @@ const Pricing = () => {
 		<section 
 			className="
 				font-mada py-6 px-4 flex flex-col 
-				items-center gap-8
+				items-center gap-8 small:px-0 
+				xlarge:gap-12 xlarge:py-10
 			"
 		>
 
 			<aside 
-				className="flex items-center  bg-white p-1 rounded-full border border-grey-100"
+				className="
+					flex items-center text-md font-normal  xlarge:text-lg
+					bg-white p-1 rounded-full border border-grey-100
+				"
 			>
 				<button
 					onClick={() => setBilling("MONTHLY")}
-					className={`px-4 rounded-full text-md font-normal transition ${
+					className={`px-4 rounded-full transition ${
 						billing === "MONTHLY"
 							? "bg-blue-100 text-white"
 							: "text-grey-300"
@@ -90,7 +94,7 @@ const Pricing = () => {
 
 				<button
 					onClick={() => setBilling("YEARLY")}
-					className={`px-4 rounded-full text-md font-normal transition ${
+					className={`px-4 rounded-full transition ${
 						billing === "YEARLY"
 							? "bg-blue-100 text-white"
 							: "text-grey-300"
@@ -102,7 +106,11 @@ const Pricing = () => {
 
 
 			<aside 
-				className="flex gap-10 w-full max-w-[70%]"
+				className="
+					flex gap-10 w-[70%] 
+					small:flex-col small:w-full
+					xlarge:w-[62%]
+				"
 			>
 				{
 					planData.map(({

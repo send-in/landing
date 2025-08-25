@@ -9,7 +9,7 @@ import Home from "./Home"
 
 const App = () => (
 	<ReactLenis
-		className="home p-2 w-screen h-screen flex flex-col items-center"
+		className="w-screen h-screen flex flex-col items-center"
 		root={true}
 		options={{
 			smoothWheel: true,
