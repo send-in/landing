@@ -36,7 +36,7 @@ const Hero = () => {
 			className="
 				flex flex-col items-center z-10
 				text-center p-20 pt-10 xlarge:pt-24
-                small:pt-20 gap-12 small:gap-14 relative
+                small:pt-8 gap-12 small:gap-8 relative
 			"
             style={{
                 scale: nextTransitionScale,
@@ -49,7 +49,7 @@ const Hero = () => {
 				<h1
 					className="
 						w-[60%] small:w-[90%] tracking-tighter
-						font-medium text-6xl small:text-5xl
+						font-medium text-6xl small:text-4xl
                         xlarge:text-7xl
 					"
 				>
@@ -87,7 +87,7 @@ const Hero = () => {
                 />
                 <img
                     className="
-                        relative z-10 w-full small:w-[80%]
+                        relative z-10 w-full small:w-[85%]
                         xlarge:w-[35vw] large:w-[40vw]
                     "
                     src="others/textbox.svg" 

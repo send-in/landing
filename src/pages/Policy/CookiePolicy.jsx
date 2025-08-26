@@ -13,7 +13,7 @@ const CookiePolicy = () => {
                     bg="bg-bluewash"
                 />
 
-				<header className="mt-24 mb-8">
+				<header className="mt-24 small:mt-12 mb-8">
 					<h1 className="text-3xl font-normal tracking-tight">Cookie Policy</h1>
 					<p className="mt-2 text-sm text-gray-500">Last updated: {lastUpdated}</p>
 				</header>
@@ -49,10 +49,10 @@ const CookiePolicy = () => {
 					</div>
 				</section>
 
-				<section className="mt-12 space-y-8">
+				<section className="mt-12 space-y-8 ">
 					<div>
 						<h3 className="text-xl font-semibold">Types of cookies we use</h3>
-						<div className="mt-4 overflow-x-auto">
+						<div className="mt-4 overflow-x-auto bg-bluewash rounded-2xl p-5">
 							<table className="min-w-full border-separate border-spacing-y-2 text-sm">
 							<thead>
 								<tr className="text-left text-gray-600">

@@ -50,7 +50,7 @@ const Features = () => (
 				className="
 					bg-bluewash flex justify-center 
 					rounded-2xl w-[70%] small:w-[90%] 
-					overflow-hidden small:h-[25vh] 
+					overflow-hidden small:h-[35vh] 
 					relative h-[75vh]
 				">
 				<img 
@@ -58,7 +58,7 @@ const Features = () => (
 					alt="options"
 					className="
 						w-[90%] absolute xlarge:w-[80%]
-						-bottom-10 small:-bottom-0
+						-bottom-10 small:bottom-4
 					"
 				/>
 			</div>

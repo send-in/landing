@@ -25,14 +25,14 @@ const Support = () => {
 
 				<header 
 					className="
-						mt-24 mb-10 text-center 
+						mt-24 small:mt-12 mb-10 text-center 
 						flex justify-center pb-8
 					"
 				>
 					<h1 
 						className="
 							text-3xl font-normal 
-							tracking-tight w-[80%]
+							tracking-tight w-[80%] small:w-full
 						"
 					>
 						Need help? We’re here to answer your questions.  
@@ -41,7 +41,7 @@ const Support = () => {
 				</header>
 
 				<section 
-					className="bg-bluewash rounded-2xl p-8"
+					className="bg-bluewash rounded-2xl p-8 small:p-6"
 				>
 					<form 
 						className="space-y-6"
@@ -118,13 +118,10 @@ const Support = () => {
 				</section>
 
 				<section 
-					className="
-						mt-12 grid gap-6 
-						md:grid-cols-2 small:mb-12
-					"
+					className="mt-12 small:mb-12"
 				>
 					<aside 
-						className="rounded-2xl bg-white p-6"
+						className="rounded-2xl bg-white p-6 small:p-2"
 					>
 						<h2 
 							className="text-lg font-semibold"

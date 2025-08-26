@@ -19,7 +19,7 @@ const PricingPage = () => (
 			<h1 
 				className="
 					text-3xl font-normal tracking-tight 
-					text-center mt-12
+					text-center mt-12 small:mt-6
 				" 
 			>
 				Pricing

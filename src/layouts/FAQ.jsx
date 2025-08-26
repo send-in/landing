@@ -48,7 +48,7 @@ const FAQ = () => {
 			<div 
 				className="
 					flex flex-col items-center gap-5 
-					w-[70%] h-[55vh] small:h-[80vh] tracking-tight small:w-full
+					w-[70%] h-[55vh] small:h-[100vh] tracking-tight small:w-full
 					text-charcoal-100 xlarge:w-[50%]
 				"
 			>

@@ -21,7 +21,7 @@ const TermsAndConditions = () => {
                 />
 
                 <header 
-                    className="mt-24 mb-8"
+                    className="mt-24 small:mt-12 mb-8"
                 >
                     <h1 
                         className="text-3xl font-normal tracking-tight"
